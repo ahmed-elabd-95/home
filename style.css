@@ -97,6 +97,9 @@ li.page-item {
   .fa{
       color: #fff;
   }
+  .w-100{
+    height: 890px;
+  }
 @media only screen and (max-width: 600px) {
   .container {
     margin-top: 20px;
@@ -123,5 +126,8 @@ li.page-item {
   }
   .grid-container{
     grid-template-columns: auto;
+  }
+  .w-100{
+    height: 175px;
   }
 }
