@@ -358,6 +358,9 @@ body > div.container.bestseller-div > div > div.body > div > div:nth-child(3),
 body > div.container.bestseller-div > div > div.body > div > div:nth-child(4) {
   box-shadow: none;
 }
+.page-item .page-link{
+  text-align: center;
+}
 @media only screen and (max-width: 600px) {
   .container {
     margin-top: 20px;
