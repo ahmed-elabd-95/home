@@ -1,12 +1,18 @@
 <html>
   <head>
     <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/50ab312600.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -23,7 +29,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -59,7 +64,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#"
               >Home <span class="sr-only">(current)</span></a
@@ -91,17 +96,60 @@
             <a class="nav-link disabled" href="#">Disabled</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
+        <div class="header-right">
+          <a href="#"><i class="far fa-user"></i></a>
+          <a href="#"><i class="far fa-heart"></i></a>
+          <div class="search-form">
+            <a href="#" class="formicon"><i class="fas fa-search"></i> </a>
+            <form class="form-inline my-2 my-lg-0 hide-show">
+              <div class="search-head">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn my-sm-0" type="submit">Search</button>
+              </div>
+            </form>
+          </div>
+          <div class="shopping-cart">
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            <div class="cart-popup">
+              <div class="cart-popup-header">
+                <p>4 products</p>
+                <a href="#">view cart</a>
+              </div>
+              <div class="cart-popup-body">
+                <div class="element">
+                  <div class="element-data">
+                    <p>Soichirt Mens Gray</p>
+                    <p>2 x 1,000 SAR</p>
+                  </div>
+                  <img
+                    src="./images//cartproduct1.png"
+                    width="32"
+                    height="32"
+                  />
+                </div>
+                <div class="element">
+                  <div class="element-data">
+                    <p>Black jacket</p>
+                    <p>2 x 200 SAR</p>
+                  </div>
+                  <img
+                    src="./images//cartproduct2.png"
+                    width="32"
+                    height="32"
+                  />
+                </div>
+              </div>
+              <div class="cart-popup-footer">
+                <a href="#" class="btn btn-dark btn-block">Checkout</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
     <div
@@ -163,38 +211,77 @@
 
     <div class="container">
       <div class="row">
-        <div id="accordion">
-          <h3>Section 1</h3>
-          <div>
-            <ul>
-              <li>List item one</li>
-              <li>List item two</li>
-              <li>List item three</li>
-            </ul>
+        <div class="sidebar">
+          <div id="accordion">
+            <h3>Top Sale</h3>
+            <div>
+              <ul>
+                <li><a href="#">Apple TV 32Gb</a></li>
+                <li><a href="#">Withings Smart Body</a></li>
+                <li><a href="#">Analyzer ws-50</a></li>
+              </ul>
+            </div>
+            <h3>Brands</h3>
+            <div>
+              <ul>
+                <li><a href="#">Apple TV 32Gb</a></li>
+                <li><a href="#">Withings Smart Body</a></li>
+                <li><a href="#">Analyzer ws-50</a></li>
+              </ul>
+            </div>
+            <h3>Hi-Tech</h3>
+            <div>
+              <ul>
+                <li><a href="#">Cell Phones</a></li>
+                <li><a href="#">Cameras</a></li>
+                <li><a href="#">Computers</a></li>
+                <li><a href="#">Tv, Audio</a></li>
+                <li><a href="#">Video Games</a></li>
+              </ul>
+            </div>
+            <h3>Sale</h3>
+            <div>
+              <ul>
+                <li><a href="#">Apple TV 32Gb</a></li>
+                <li><a href="#">Withings Smart Body</a></li>
+                <li><a href="#">Analyzer ws-50</a></li>
+              </ul>
+            </div>
           </div>
-          <h3>Section 2</h3>
-          <div>
-            <ul>
-              <li>List item one</li>
-              <li>List item two</li>
-              <li>List item three</li>
-            </ul>
-          </div>
-          <h3>Section 3</h3>
-          <div>
-            <ul>
-              <li>List item one</li>
-              <li>List item two</li>
-              <li>List item three</li>
-            </ul>
-          </div>
-          <h3>Section 4</h3>
-          <div>
-            <ul>
-              <li>List item one</li>
-              <li>List item two</li>
-              <li>List item three</li>
-            </ul>
+          <div class="filter">
+            <div class="available">
+              <p>available</p>
+            </div>
+            <div class="radio-filter">
+              <input type="radio" id="Bose" name="gender" value="Bose" />
+              <label for="Bose">In Storage</label><br />
+              <input
+                type="radio"
+                id="online-shop"
+                name="gender"
+                value="online-shop"
+              />
+              <label for="online-shop">In Online-Shop</label><br />
+            </div>
+            <div class="available brands">
+              <p>Brands</p>
+              <a href="#">All</a>
+            </div>
+            <div class="radio-filter">
+              <input type="checkbox" id="apple" name="gender" value="apple" />
+              <label for="apple">Apple</label><br />
+              <input type="checkbox" id="JBL" name="gender" value="JBL" />
+              <label for="JBL">JBL</label><br />
+              <input
+                type="checkbox"
+                id="in-storage"
+                name="gender"
+                value="in-storage"
+              />
+              <label for="Bose">Bose</label><br />
+              <input type="checkbox" id="nest" name="gender" value="nest" />
+              <label for="nest">Nest</label><br />
+            </div>
           </div>
         </div>
         <div class="products-flex-container">
@@ -205,9 +292,9 @@
                 src="./images/Clip.png"
                 alt="Third slide"
               />
-              <p>List item one</p>
-              <p>List item one</p>
-              <p>List item one</p>
+              <p class="product-name">Apple TV 32Gb</p>
+              <p class="product-color">Black</p>
+              <p class="product-price">49.99$</p>
             </div>
             <div>
               <img
@@ -215,9 +302,9 @@
                 src="./images/watch.png"
                 alt="Third slide"
               />
-              <p>List item one</p>
-              <p>List item one</p>
-              <p>List item one</p>
+              <p class="product-name">Pebble Time</p>
+              <p class="product-color">Red</p>
+              <p class="product-price">29.99$</p>
             </div>
             <div>
               <img
@@ -225,32 +312,39 @@
                 src="./images/Clip2.png"
                 alt="Third slide"
               />
-              <p>List item one</p>
-              <p>List item one</p>
-              <p>List item one</p>
+              <p class="product-name">Zendure 4-Port USB</p>
+              <p class="product-color">White</p>
+              <p class="product-price">49.99$</p>
             </div>
           </div>
           <div class="second-flex">
-            <div>
+            <div class="first-child">
               <img
                 class="product-imgs"
                 src="./images/Photo.png"
                 alt="Third slide"
               />
-              <p>List item one</p>
-              <p>List item one</p>
-              <p>List item one</p>
+              <p class="product-name">Withings Smart Body</p>
+              <p class="product-color">Black</p>
+              <p class="product-price">39.99$</p>
             </div>
 
-            <div>
+            <div class="last-child">
               <img
                 class="product-imgs"
                 src="./images/Photo2.png"
                 alt="Third slide"
               />
-              <p>List item one</p>
-              <p>List item one</p>
-              <p>List item one</p>
+              <div class="large-product-details">
+                <div class="name-color">
+                  <p class="product-name">JBL Charge +2</p>
+                  <p class="product-color">Black</p>
+                  <p class="product-price">39.99$</p>
+                </div>
+                <div class="buynow">
+                  <a href="#">Buy Now</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -290,9 +384,9 @@
                 src="./images/Photo3.png"
                 alt="Third slide"
               />
-              <p>List item one</p>
-              <p>List item one</p>
-              <p>List item one</p>
+              <p class="product-name">Beanie</p>
+              <p class="product-color">Green</p>
+              <p class="product-price">29.99$</p>
             </div>
             <div>
               <img
@@ -300,9 +394,9 @@
                 src="./images/tshirt.png"
                 alt="Third slide"
               />
-              <p>List item one</p>
-              <p>List item one</p>
-              <p>List item one</p>
+              <p class="product-name">T-Shirt With a Print</p>
+              <p class="product-color">Dark Blue</p>
+              <p class="product-price">19.99$</p>
             </div>
             <div>
               <img
@@ -310,9 +404,19 @@
                 src="./images/hoodie.png"
                 alt="Third slide"
               />
-              <p>List item one</p>
-              <p>List item one</p>
-              <p>List item one</p>
+              <p class="product-name">Pile-Lined Hooded Jacket</p>
+              <p class="product-color">Dark Blue</p>
+              <p class="product-price">49.99$</p>
+            </div>
+            <div>
+              <img
+                class="product-imgs"
+                src="./images/hoodie.png"
+                alt="Third slide"
+              />
+              <p class="product-name">Trainers</p>
+              <p class="product-color">Space Grey</p>
+              <p class="product-price">29.99$</p>
             </div>
           </div>
         </div>
