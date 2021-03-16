@@ -9,14 +9,14 @@ body {
   float: left;
 }
 .products-flex-container {
-  width: 65%;
+  width: 70%;
   float: right;
 }
 .first-flex,
 .second-flex {
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  margin: 20px 0 20px 20px;
 }
 .first-flex {
   margin-top: 0;
@@ -39,7 +39,9 @@ body
   > div.second-flex
   > div:nth-child(2)
   > img {
-  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   margin-bottom: auto;
 }
 .first-flex div {
@@ -288,9 +290,12 @@ body
   border-radius: 25px;
   border: 1px solid #fff;
 }
-p.product-name {
+a.product-name {
   font-size: 15px;
   font-weight: bold;
+}
+a.product-name:hover {
+  text-decoration: none;
 }
 p.product-color {
   color: #ccc;
@@ -358,10 +363,13 @@ body > div.container.bestseller-div > div > div.body > div > div:nth-child(3),
 body > div.container.bestseller-div > div > div.body > div > div:nth-child(4) {
   box-shadow: none;
 }
-.page-item .page-link{
+.page-item .page-link {
   text-align: center;
 }
 @media only screen and (max-width: 600px) {
+  .web {
+    display: none;
+  }
   .container {
     margin-top: 20px;
   }
@@ -430,5 +438,61 @@ body > div.container.bestseller-div > div > div.body > div > div:nth-child(4) {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 25px;
+  }
+  body
+    > div:nth-child(3)
+    > div
+    > div.products-flex-container.mobile
+    > div.first-flex,
+  body
+    > div:nth-child(3)
+    > div
+    > div.products-flex-container.mobile
+    > div.second-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body
+    > div:nth-child(3)
+    > div
+    > div.products-flex-container.mobile
+    > div.first-flex
+    div {
+    width: 45% !important;
+  }
+  body
+    > div:nth-child(3)
+    > div
+    > div.products-flex-container.mobile
+    > div.second-flex
+    > div {
+    width: 95% !important;
+  }
+  body
+    > div:nth-child(3)
+    > div
+    > div.products-flex-container.mobile
+    > div.second-flex
+    > div
+    > img {
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  body
+    > div:nth-child(3)
+    > div
+    > div.products-flex-container.mobile
+    > div.second-flex
+    > div
+    > div {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .mobile {
+    display: none;
   }
 }

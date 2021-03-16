@@ -8,27 +8,6 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/50ab312600.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-
     <link
       rel="stylesheet"
       href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -42,9 +21,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="jquery.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -253,8 +229,13 @@
               <p>available</p>
             </div>
             <div class="radio-filter">
-              <input type="radio" id="Bose" name="gender" value="Bose" />
-              <label for="Bose">In Storage</label><br />
+              <input
+                type="radio"
+                id="in-storage"
+                name="gender"
+                value="in-storage"
+              />
+              <label for="in-storage">In Storage</label><br />
               <input
                 type="radio"
                 id="online-shop"
@@ -272,19 +253,14 @@
               <label for="apple">Apple</label><br />
               <input type="checkbox" id="JBL" name="gender" value="JBL" />
               <label for="JBL">JBL</label><br />
-              <input
-                type="checkbox"
-                id="in-storage"
-                name="gender"
-                value="in-storage"
-              />
-              <label for="Bose">Bose</label><br />
+              <input type="checkbox" id="bose" name="gender" value="bose" />
+              <label for="bose">Bose</label><br />
               <input type="checkbox" id="nest" name="gender" value="nest" />
               <label for="nest">Nest</label><br />
             </div>
           </div>
         </div>
-        <div class="products-flex-container">
+        <div class="products-flex-container web">
           <div class="first-flex">
             <div>
               <img
@@ -292,7 +268,7 @@
                 src="./images/Clip.png"
                 alt="Third slide"
               />
-              <p class="product-name">Apple TV 32Gb</p>
+              <a href="#" class="product-name">Apple TV 32Gb</a>
               <p class="product-color">Black</p>
               <p class="product-price">49.99$</p>
             </div>
@@ -302,7 +278,7 @@
                 src="./images/watch.png"
                 alt="Third slide"
               />
-              <p class="product-name">Pebble Time</p>
+              <a href="#" class="product-name">Pebble Time</a>
               <p class="product-color">Red</p>
               <p class="product-price">29.99$</p>
             </div>
@@ -312,7 +288,7 @@
                 src="./images/Clip2.png"
                 alt="Third slide"
               />
-              <p class="product-name">Zendure 4-Port USB</p>
+              <a href="#" class="product-name">Zendure 4-Por USB</a>
               <p class="product-color">White</p>
               <p class="product-price">49.99$</p>
             </div>
@@ -324,11 +300,74 @@
                 src="./images/Photo.png"
                 alt="Third slide"
               />
-              <p class="product-name">Withings Smart Body</p>
+              <a href="#" class="product-name">Withings Smar Body</a>
               <p class="product-color">Black</p>
               <p class="product-price">39.99$</p>
             </div>
 
+            <div class="last-child">
+              <img
+                class="product-imgs"
+                src="./images/Photo2.png"
+                alt="Third slide"
+              />
+              <div class="large-product-details">
+                <div class="name-color">
+                  <p class="product-name">JBL Charge +2</p>
+                  <p class="product-color">Black</p>
+                  <p class="product-price">39.99$</p>
+                </div>
+                <div class="buynow">
+                  <a href="#">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products-flex-container mobile">
+          <div class="first-flex">
+            <div>
+              <img
+                class="product-imgs"
+                src="./images/Clip.png"
+                alt="Third slide"
+              />
+              <a href="#" class="product-name">Apple TV 32Gb</a>
+              <p class="product-color">Black</p>
+              <p class="product-price">49.99$</p>
+            </div>
+            <div>
+              <img
+                class="product-imgs"
+                src="./images/watch.png"
+                alt="Third slide"
+              />
+              <a href="#" class="product-name">Pebble Time</a>
+              <p class="product-color">Red</p>
+              <p class="product-price">29.99$</p>
+            </div>
+            <div>
+              <img
+                class="product-imgs"
+                src="./images/Clip2.png"
+                alt="Third slide"
+              />
+              <a href="#" class="product-name">Zendure 4-Por USB</a>
+              <p class="product-color">White</p>
+              <p class="product-price">49.99$</p>
+            </div>
+            <div class="first-child">
+              <img
+                class="product-imgs"
+                src="./images/Photo.png"
+                alt="Third slide"
+              />
+              <a href="#" class="product-name">Withings Smar Body</a>
+              <p class="product-color">Black</p>
+              <p class="product-price">39.99$</p>
+            </div>
+          </div>
+          <div class="second-flex">
             <div class="last-child">
               <img
                 class="product-imgs"
@@ -384,7 +423,7 @@
                 src="./images/Photo3.png"
                 alt="Third slide"
               />
-              <p class="product-name">Beanie</p>
+              <a href="#" class="product-name">Beanie</a>
               <p class="product-color">Green</p>
               <p class="product-price">29.99$</p>
             </div>
@@ -394,7 +433,7 @@
                 src="./images/tshirt.png"
                 alt="Third slide"
               />
-              <p class="product-name">T-Shirt With a Print</p>
+              <a href="#" class="product-name">T-Shirt With a Print</a>
               <p class="product-color">Dark Blue</p>
               <p class="product-price">19.99$</p>
             </div>
@@ -404,7 +443,7 @@
                 src="./images/hoodie.png"
                 alt="Third slide"
               />
-              <p class="product-name">Pile-Lined Hooded Jacket</p>
+              <a href="#" class="product-name">Pile-Lined Hooded Jacket</a>
               <p class="product-color">Dark Blue</p>
               <p class="product-price">49.99$</p>
             </div>
@@ -414,7 +453,7 @@
                 src="./images/hoodie.png"
                 alt="Third slide"
               />
-              <p class="product-name">Trainers</p>
+              <a href="#" class="product-name">Trainers</a>
               <p class="product-color">Space Grey</p>
               <p class="product-price">29.99$</p>
             </div>
@@ -446,5 +485,28 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/50ab312600.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery.js"></script>
   </body>
 </html>
